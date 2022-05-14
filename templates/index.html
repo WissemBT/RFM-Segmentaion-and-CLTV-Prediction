@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>P2M project</title>
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}">
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/magnific-popup.css')}}">
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/owl.theme.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.css')}}">
+
+<link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+
+<!-- Main css -->
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-pulse"></div>
+</div>
+
+
+
+<!-- Navigation Section -->
+
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="index.html" class="navbar-brand"><span>CLTV</span> PREDICTOR</a>
+		</div>
+
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#home" class="smoothScroll">Home</a></li>
+				<li><a href="#about" class="smoothScroll">About</a></li>
+				
+                <li><a href="#pricing" class="smoothScroll">Segment by RFM</a></li>
+                <li><a href="#newsletter" class="smoothScroll">Segment by CLTV</a></li>
+                <li><a href="#screenshot" class="smoothScroll">Predict CLTV</a></li>
+        		<li><a href="#" data-toggle="modal" data-target="#modal1">Contact</a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+
+<!-- Home Section -->
+
+<section id="home" class="main">
+     <div class="overlay"></div>
+	<div class="container">
+		<div class="row">
+
+               <!-- <div class="wow fadeInUp col-md-6 col-sm-5 col-xs-10 col-xs-offset-1 col-sm-offset-0" data-wow-delay="0.2s">
+                    <img src="{{url_for('static',filename="images/home-img.png")}}" class="img-responsive" alt="Home">
+               </div> -->
+
+               <div class="col-md-12 col-sm-12 col-xs-12">
+               
+                    <div class="home-thumb">
+                         <h1 class="wow fadeInUp" data-wow-delay="0.6s">CLTV prediction</h1>
+                         <p class="wow fadeInUp" data-wow-delay="0.8s">Using this application, you can segment your customers either by using RFM analysis and K-means clustering, or by using CLTV prediction as you can predict your customers lifetime value over one month, six months and one year.</p>
+                         <a href="#pricing" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="1s"> Try it! </a>
+                    </div>
+               </div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- About Section -->
+
+<section id="about">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <div class="wow bounceIn section-title">
+                         <h1>our Team</h1>
+                         <hr>
+                    </div>
+               </div>
+
+               <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
+                   <h2>This project is our second year end of the year project at sup'com.</h2>
+                   <h3 class="wow fadeInUp" data-wow-delay="0.8s">This project was realized under the supervision of professor Meher Heni</h3>
+                   <p class="wow fadeInUp" data-wow-delay="0.4s"><a href="https://plus.google.com/+templatemo" target="_blank"></a> </p>
+               </div>
+
+               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+                    <div class="about-thumb">
+                         <img src="{{url_for('static',filename="images/team-img1.jpg")}}" class="img-responsive" alt="Team">
+                              <div class="about-overlay">
+                                   <h3>Wissem BEN BETTAIEB</h3>
+                                   <h4>a second year student at SUP'COM</h4>
+                                   <ul class="social-icon">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                   </ul>
+                              </div>
+                    </div>
+               </div>
+
+                <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+                    <div class="about-thumb">
+                         <img src="{{url_for('static',filename="images/team-img2.jpg")}}" class="img-responsive" alt="Team">
+                              <div class="about-overlay">
+                                   <h3>Ahmed Bouzid </h3>
+                                   <h4>a second year student at SUP'COM</h4>
+                                   <ul class="social-icon">
+                                        <li><a href="#" class="fa fa-pinterest"></a></li>
+                                        <li><a href="#" class="fa fa-behance"></a></li>
+                                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                                   </ul>
+                              </div>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Divider Section -->
+
+<section id="divider">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.4s">RFM and CLTV are two methods commonly utilized to analyze customer value. CLTV or CLV represents the amount of money a customer is expected to spend in your business during their lifetime and can be used to optimize your marketing efforts. RFM is commonly used for segmenting marketing strategies for different segments. CLTV helps you determine how much money you should spend acquiring new customers and retaining existing ones.</h2>
+                    <a href="#screenshot" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="0.8s">Learn More</a>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Screenshot Section -->
+
+
+
+
+<!-- Pricing Section -->
+
+<section id="pricing">
+     <div class="container">
+          <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title">
+                         <h1>Segment by RFM</h1>
+                         <hr>
+                         <p style="color:white">upload your transactions data file, it should contain a CustomerID,Date and Total columns which describes the customer identifier, the date of transcation and the total cost of it. you will get a file that contains your customers segmented using two methods, the first one using the RFM score , the second one by using K means clustering.</p>
+                    </div>
+               </div>
+               <div class="wow fadeInUp segmentRFM-form" data-wow-delay="0.8s">
+                    <form action="/segmentrfm" method="POST" enctype = "multipart/form-data">
+                         <div class="col-md-8 col-sm-7">
+                              <input name="dataRFM" type="file"  class="form-control" id="dataRFM" placeholder="data">
+                             </div>
+                         <div class="col-md-4 col-sm-5">
+                              <input name="submit" type="submit" class="form-control" id="submit" value="Segment">
+                         </div>
+                         {% if verif %}
+                          <a href="/rfm"><h2>You can download your segmented rfm data from here </h2></a>
+                          
+                               <h2 style="font-size: large;">
+                          {% for table in tables %}
+                                   {{ table|safe }}
+                                   {% endfor %}
+                         {% endif %} 
+                              </h2>
+                              {% if filebadr %}
+                                    <h2> Your submitted file isn't a csv file !</h2>
+                              {% endif %}
+                              {% if notsubmitr %}
+                              <h2> You must submit a file ! </h2>
+                              {% endif %}
+                    </form>
+               </div>
+
+               <!-- <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.4s">
+                    <div class="pricing-plan">
+                         <div class="pricing-month">
+                              <h2>$60</h2>
+                         </div>
+                         <div class="pricing-title">
+                              <h3>Starter</h3>
+                         </div>
+                         <p>40 Users</p>
+                         <p>10GB per user</p>
+                         <p>Unlimited Support</p>
+                         <p>1 Year License</p>
+                         <button class="btn btn-default section-btn">Register now</button>
+                    </div>
+               </div>
+
+               <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+                    <div class="pricing-plan">
+                         <div class="pricing-month">
+                              <h2>$120</h2>
+                         </div>
+                         <div class="pricing-title">
+                              <h3>Business</h3>
+                         </div>
+                         <p>100 Users</p>
+                         <p>20GB per user</p>
+                         <p>Unlimited Support</p>
+                         <p>2 Years License</p>
+                         <button class="btn btn-default section-btn">Register now</button>
+                    </div>
+               </div>
+
+               <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.8s">
+                    <div class="pricing-plan">
+                         <div class="pricing-month">
+                              <h2>$200</h2>
+                         </div>
+                         <div class="pricing-title">
+                              <h3>Advanced</h3>
+                         </div>
+                         <p>200 Users</p>
+                         <p>30GB per user</p>
+                         <p>Unlimted Support</p>
+                         <p>3 Years License</p>
+                         <button class="btn btn-default section-btn">Register now</button>
+                    </div>
+               </div> -->
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Newsletter Section -->
+
+<section id="newsletter">
+     <div class="overlay"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    <div class="wow bounceIn section-title">
+                         <h1>Segment by CLTV</h1>
+                         <p class="wow fadeInUp" data-wow-delay="0.5s">                          <p>upload your transactions data file, it should contain a CustomerID,Date and Total columns which describes the customer identifier, the date of transcation and the total cost of it</p>
+                    </p>
+                    </div>
+                    <div class="wow fadeInUp newsletter-form" data-wow-delay="0.8s">
+                         <form action="/segmentcltv" method="POST" enctype = "multipart/form-data">
+                              <div class="col-md-8 col-sm-7">
+                                   <input name="dataCLTV" type="file"  class="form-control" id="dataCLTV" placeholder="Your RFM data">
+                           	  </div>
+                              <div class="col-md-4 col-sm-5">
+                                   <input name="submit" type="submit" class="form-control" id="submit" value="Segment">
+                              </div>
+                              {% if verify %}
+                                   <a href="/cltv"><h2> download your file from here</h2></a>
+                                   <br>
+                                  <h2 style="font-size: x-large;"> 
+                                   {% for table in tables %}>
+                                   {{ table|safe }}
+                                   {% endfor %}  
+                                    </h2> 
+                    
+                              {% endif %}
+                              {% if filebadc %}
+                                    <h2> Your submitted file isn't a csv file !</h2>
+                              {% endif %}
+                              {% if notsubmitc %}
+                              <h2> You must submit a file ! </h2>
+                              {% endif %}
+                         </form>
+                         
+                         
+                   
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<section id="screenshot">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    <div class="section-title">
+                         <h1>CLTV Prediction</h1>
+                         <p class="wow fadeInUp" data-wow-delay="0.8s">Enter a customer ID , if the ID exist , you will get the predicted cltv for one month, six months and one year.Added to this, you will get the customer segment.</p>
+                    </div>
+               </div>
+               <div class="wow fadeInUp cltvclient-form" data-wow-delay="0.8s">
+                    <form action="/" method="POST">
+                         <div class="col-md-8 col-sm-7">
+                              <input name="customerID" type="text" class="form-control" id="customerID" placeholder="customer ID">
+                             </div>
+                         <div class="col-md-4 col-sm-5">
+                              <input name="submit" type="submit" class="form-control" id="submit" value="PREDICT">
+                         </div>
+                         <br>
+                         
+                         
+                    </form>
+                    <br>
+                    
+                    
+               </div>
+               <div style="padding:15% 15%;">
+               <p>
+                    
+                    {% if bo %}
+                              <h3 > predicted cltv for one Month : {{oneM}} </h3>
+                              <h3 > predicted cltv for six Months : {{sixM}} </h3>
+                              <h3 > predicted cltv for one Year : {{oneY}} </h3>
+                              <h3 > customer segment is  : {{seg}} </h3>
+                         {% elif bo==False %}
+                              <h3> this customer doesn't exist </h3>
+                         {% endif %}
+               </p>
+               </div>
+               <!-- Screenshot Owl Carousel
+               <div id="screenshot-carousel" class="owl-carousel">
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                         <a href="{{url_for('static',filename="images/screenshot-img1.jpg")}}" class="image-popup">
+                              <img src="{{url_for('static',filename="images/screenshot-img1.jpg")}}" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                         <a href="{{url_for('static',filename="images/screenshot-img2.jpg")}}" class="image-popup">
+                              <img src="{{url_for('static',filename="images/screenshot-img2.jpg")}}" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                         <a href="{{url_for('static',filename="images/screenshot-img3.jpg")}}" class="image-popup">
+                              <img src="{{url_for('static',filename="images/screenshot-img3.jpg")}}" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                         <a href="{{url_for('static',filename="images/screenshot-img4.jpg")}}" class="image-popup">
+                              <img src="{{url_for('static',filename="images/screenshot-img4.jpg")}}" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                         <a href="{{url_for('static',filename="images/screenshot-img5.jpg")}}" class="image-popup">
+                              <img src="{{url_for('static',filename="images/screenshot-img5.jpg")}}" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                         <a href="{{url_for('static',filename="images/screenshot-img6.jpg")}}" class="image-popup">
+                              <img src="{{url_for('static',filename="images/screenshot-img6.jpg")}}" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                         <a href="{{url_for('static',filename="images/screenshot-img7.jpg")}}" class="image-popup">
+                              <img src="{{url_for('static',filename="images/screenshot-img7.jpg")}}" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                         <a href="{{url_for('static',filename="images/screenshot-img8.jpg")}}" class="image-popup">
+                              <img src="{{url_for('static',filename="images/screenshot-img8.jpg")}}" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+               </div> -->
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Footer Section -->
+
+<footer style="background-color:aliceblue">
+	<div class="container">
+		<div class="row">
+
+               <div >
+                    <div class="wow fadeInUp footer-copyright" data-wow-delay="0.4s">
+                         <p style="text-align:center;color:black"> &copy;Ahmed Bouzid  <br> &copy; Wissem Ben Bettaieb
+                         <!-- <span>||</span>  -->
+                         <!-- Design: <a href="https://plus.google.com/+templatemo" title="free css templates" target="_blank">Templatemo</a> -->
+                    </p>
+                    </div>
+               </div>
+
+			<!-- <div class="col-md-4 col-sm-6">
+				<ul class="wow fadeInUp social-icon" data-wow-delay="0.8s">
+                         <li><a href="#" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-google-plus"></a></li>
+                         <li><a href="#" class="fa fa-dribbble"></a></li>
+                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div> -->
+			
+		</div>
+	</div>
+</footer>
+
+
+<!-- Modal Contact -->
+
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+      <div class="modal-content modal-popup">
+          <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <h2 class="modal-title">Contact Form</h2>
+          </div>
+
+               <form action="/" method="POST">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
+                 	<input name="email" type="email" class="form-control" id="email" placeholder="Email Address" required>
+                 	<textarea name="message" rows="3" class="form-control" id="message" placeholder="Message" required></textarea>
+                    <input name="submit" type="submit" class="form-control" id="submit" value="Send Message">
+               </form>
+          </div>
+     </div>
+</div>
+
+
+<!-- Back top -->
+
+<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+
+<!-- SCRIPTS -->
+
+<script src="{{url_for('static',filename="js/jquery.js")}}"></script>
+<script src="{{url_for('static',filename="js/bootstrap.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/jquery.magnific-popup.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/magnific-popup-options.js")}}"></script>
+<script src="{{url_for('static',filename="js/owl.carousel.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/smoothscroll.js")}}"></script>
+<script src="{{url_for('static',filename="js/wow.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/custom.js")}}"></script>
+
+</body>
+</html>
